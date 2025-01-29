@@ -28,8 +28,8 @@ body{
     justify-content: center;
 }
 
-a:visited{
-    color: #1561F0;
+a{
+    color:#1561F0
 }
 
 .navbar a{
