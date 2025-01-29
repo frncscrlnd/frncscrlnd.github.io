@@ -28,10 +28,6 @@ body{
     justify-content: center;
 }
 
-a{
-    color:#1561F0
-}
-
 .navbar a{
     color: #DDE6ED;
     margin: 0 15px;
@@ -44,7 +40,10 @@ a{
     color: #1561F0;
 }
 
-/* Main content */
+.contact-item{
+    color: #1561F0;
+}
+
 .content {
     text-align: center;
     padding: 20px;
