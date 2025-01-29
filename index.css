@@ -28,6 +28,10 @@ body{
     justify-content: center;
 }
 
+a:visited{
+    color: blue;
+}
+
 .navbar a{
     color: #DDE6ED;
     margin: 0 15px;
