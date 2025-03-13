@@ -58,3 +58,10 @@ p {
     color: #1561F0;
     margin-top: 10px;
 }
+
+.link svg {
+    margin-left: 5px;
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+}
