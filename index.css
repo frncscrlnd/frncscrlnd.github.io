@@ -66,3 +66,22 @@ p {
     height: 12px;
 }
 
+@media screen and (max-width: 768px) {
+    body {
+        justify-content: flex-start; /* Rendi la pagina meno centrata sui dispositivi mobili */
+    }
+
+    .navbar {
+        flex-direction: column; /* Disporre i link in una colonna */
+        align-items: center; /* Centra i link nella navbar */
+    }
+
+    .navbar a {
+        margin: 10px 0; /* Aggiungi un po' di spazio tra i link */
+        font-size: 16px; /* Riduci la dimensione del font per dispositivi mobili */
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
