@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body{            
+body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #131313;
@@ -13,9 +13,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    justify-content: flex-start; /* Cambia da 'center' a 'flex-start' per evitare che il contenuto venga centrato verticalmente */
+    min-height: 100vh; /* Usa min-height per garantire che il corpo occupi almeno l'altezza del viewport */
 }
+
 
 /* Navbar styles */
 .navbar{
@@ -66,22 +67,3 @@ p {
     height: 12px;
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        justify-content: flex-start; /* Rendi la pagina meno centrata sui dispositivi mobili */
-    }
-
-    .navbar {
-        flex-direction: column; /* Disporre i link in una colonna */
-        align-items: center; /* Centra i link nella navbar */
-    }
-
-    .navbar a {
-        margin: 10px 0; /* Aggiungi un po' di spazio tra i link */
-        font-size: 16px; /* Riduci la dimensione del font per dispositivi mobili */
-    }
-
-    .content {
-        padding: 10px;
-    }
-}
