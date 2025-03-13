@@ -60,6 +60,10 @@ p {
     margin-top: 10px;
 }
 
+span {
+    font-size: large;
+}
+
 .link svg {
     margin-left: 5px;
     vertical-align: middle;
