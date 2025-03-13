@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Cambia da 'center' a 'flex-start' per evitare che il contenuto venga centrato verticalmente */
+    justify-content: center;
     min-height: 100vh; /* Usa min-height per garantire che il corpo occupi almeno l'altezza del viewport */
 }
 
