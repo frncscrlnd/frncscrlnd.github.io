@@ -66,10 +66,13 @@ p {
     height: 12px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: block; /* Imposta la navbar come un blocco, per visualizzarla correttamente */
+    }
+
     .navbar a {
-        /* Regola CSS per la visualizzazione su dispositivi più piccoli */
-        display: block;
-        /* Esempio di ulteriore stile per dispositivi mobili */
+        display: block; /* Aggiungi il display block per i collegamenti */
+        padding: 15px;
     }
 }
