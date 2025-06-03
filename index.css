@@ -84,5 +84,6 @@ iframe {
     width: 300px; 
     height: 150px; 
     overflow: hidden;
+    padding: 0px;
 }
 
