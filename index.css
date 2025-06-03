@@ -79,3 +79,10 @@ span {
     height: 12px;
 }
 
+iframe {
+    border:none; 
+    width: 300px; 
+    height: 150px; 
+    overflow: hidden;
+}
+
