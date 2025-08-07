@@ -57,7 +57,7 @@ h2 {
     margin: 0;
 }
 
-a.h2 {
+h2 a {
     text-decoration: underline;
     text-decoration-color: #1561F0;
 }
