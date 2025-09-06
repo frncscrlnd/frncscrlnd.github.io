@@ -63,9 +63,9 @@ h2 a {
 }
 
 p {
-    font-size: 24px;
-    color: #1561F0;
-    margin-top: 10px;
+    color: white; 
+    width: 70%; 
+    margin: 0 auto;
 }
 
 span {
