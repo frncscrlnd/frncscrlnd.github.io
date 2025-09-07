@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Homepage</title>
-
     <link rel="stylesheet" href="index.css">
-    
     <link rel="icon" type="image/x-icon" href="media\icon.ico">
 </head>
 
@@ -36,36 +33,69 @@
         <a href="contacts.html">contacts</a>
     </div>
 
-    <div class="content">
-        <h1>Welcome!</h1>
-        <span>I'm Francesco Orlandi, a passionate cybersecurity technician currently studying at ITS Academy Sistema Meccanica e Informatica in Lanciano, Italy. 
-        <br>
-        With a background in programming and security, I'm dedicated to expanding my knowledge and skills in the field.</span>
-        <br>
-        <p>Click on the <a href="https://github.com/frncscrlnd?tab=repositories" class="link" target="_blank">
-            homework
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 3h3v3"></path>
-                <path d="M11 14 21 4"></path>
-                <path d="M21 10.5V21H3V3h10.5"></path>
-            </svg></a>  section to have a look at my projects click on the <a href="https://frncscrlnd.github.io/writeups" class="link" target="_blank">
-            writeups
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 3h3v3"></path>
-                <path d="M11 14 21 4"></path>
-                <path d="M21 10.5V21H3V3h10.5"></path>
-            </svg></a> section to keep up with solutions to TryHackMe/HackTheBox rooms and other challenges.</p>
-
-        <h2>Skills</h2>
-        <span><strong>Programming:</strong> Java (Spring Boot), Python (Django), JS (Node)</span><br>
-        <span><strong>Web development:</strong> HTML, CSS</span><br>
-        <span><strong>DBMSs:</strong> MySQL, MongoDB</span><br>
-        <span><strong>Productivity Tools:</strong> Microsoft Office Suite</span><br>
-        <span><strong>Languages:</strong> Italian (native), English (B2)</span><br>
-
-        <h2>Check out my TryHackMe profile here: </h2>
-        <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3695567" style='border:none;'></iframe>
-
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome!</h1>
+            <p class="intro-text">I'm Francesco Orlandi, a passionate cybersecurity technician currently studying at lorem ipsum, Italy. With a background in programming and security, I'm dedicated to expanding my knowledge and skills in the field.</p>
+            
+            <div class="cta-buttons">
+                <a href="https://github.com/frncscrlnd?tab=repositories" class="cta-btn" target="_blank">
+                    View my projects
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 3h3v3"></path>
+                        <path d="M11 14 21 4"></path>
+                        <path d="M21 10.5V21H3V3h10.5"></path>
+                    </svg>
+                </a>
+                <a href="https://frncscrlnd.github.io/writeups" class="cta-btn secondary" target="_blank">
+                    Read writeups
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 3h3v3"></path>
+                        <path d="M11 14 21 4"></path>
+                        <path d="M21 10.5V21H3V3h10.5"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
     </div>
+
+    <div class="content-section">
+        <div class="skills-container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <p>Java (Spring Boot), Python (Django), JS (Node)</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Web development</h3>
+                    <p>HTML, CSS</p>
+                </div>
+                <div class="skill-category">
+                    <h3>DBMSs</h3>
+                    <p>MySQL, MongoDB</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Productivity tools</h3>
+                    <p>Microsoft Office Suite</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <p>Italian (native), English (B2)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-section">
+        <h2>TryHackMe profile</h2>
+        <div class="profile-badge">
+            <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3695567"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>Nothing to see here : )</p>
+    </footer>
 </body>
 </html>

@@ -7,69 +7,199 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #131313;
+    background-color: #0a0a0a;
     color: #DDE6ED;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     background-color: #131313;
-    padding: 15px;
+    padding: 20px;
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.navbar a{
+.navbar a {
     color: #DDE6ED;
-    margin: 0 15px;
+    margin: 0 20px;
     text-decoration: none;
     font-weight: 500;
     font-size: 18px;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 4px;
 }
 
 .navbar a:hover {
     color: #1561F0;
+    background-color: rgba(21, 97, 240, 0.1);
 }
 
-.contact-item{
-    color: #1561F0;
-}
-
-.content {
+.hero-section {
+    background: linear-gradient(135deg, #131313 0%, #1a1a2e 100%);
+    padding: 80px 20px;
     text-align: center;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.hero-content {
+    max-width: 800px;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 3.5rem;
     color: white;
-    margin: 0;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #1561F0, #00C2FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-h2 {
-    font-size: 50px;
+.intro-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #CCD6F6;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #1561F0;
     color: white;
-    margin: 0;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
-h2 a {
-    text-decoration: underline;
-    text-decoration-color: #1561F0;
+.cta-btn.secondary {
+    background-color: transparent;
+    border: 1px solid #1561F0;
+    color: #1561F0;
 }
 
-p {
-    color: white; 
-    width: 70%; 
+.cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(21, 97, 240, 0.3);
+}
+
+.cta-btn.secondary:hover {
+    background-color: rgba(21, 97, 240, 0.1);
+}
+
+.cta-btn svg {
+    margin-left: 8px;
+}
+
+.content-section {
+    padding: 80px 20px;
+    background-color: #131313;
+}
+
+.skills-container {
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-span {
-    font-size: large;
+h2 {
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #1561F0, #00C2FF);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.skill-category {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 3px solid #1561F0;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(21, 97, 240, 0.2);
+}
+
+.skill-category h3 {
+    color: #1561F0;
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.skill-category p {
+    color: #CCD6F6;
+    line-height: 1.6;
+}
+
+.profile-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #131313 100%);
+}
+
+.profile-badge {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+iframe {
+    border: none;
+    width: 300px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #0a0a0a;
+    padding: 30px;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    color: #6c757d;
+    margin: 0;
 }
 
 .link svg {
@@ -79,11 +209,116 @@ span {
     height: 12px;
 }
 
-iframe {
-    border:none; 
-    width: 300px; 
-    height: 150px; 
-    overflow: hidden;
-    padding: 0px;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px;
+    }
+    
+    .navbar a {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-section, .content-section, .profile-section {
+        padding: 60px 20px;
+    }
+}
+.contacts-section {
+    padding: 80px 20px;
+    background-color: #131313;
 }
 
+.contacts-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 3px solid #1561F0;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(21, 97, 240, 0.2);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #1561F0, #00C2FF);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon svg {
+    color: white;
+}
+
+.contact-card h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    color: #CCD6F6;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #1561F0;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #1561F0;
+}
+
+.contact-link:hover {
+    background-color: #1561F0;
+    color: white;
+}
+
+.contact-link svg {
+    margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+    .contacts-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-card {
+        padding: 20px;
+    }
+}
