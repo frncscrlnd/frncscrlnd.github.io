@@ -17,8 +17,7 @@ body {
 .navbar {
     width: 100%;
     background-color: #131313;
-    padding: 20px;
-    margin: auto;
+    padding: 30px;
     display: flex;
     justify-content: center;
     position: sticky;
